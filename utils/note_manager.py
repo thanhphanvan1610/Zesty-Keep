@@ -1,4 +1,7 @@
+from utils.logger import setup_logging
+import logging
 
+setup_logging()
 
 def find_note_by_id(keep, note_id):
     try:
@@ -6,12 +9,12 @@ def find_note_by_id(keep, note_id):
         notes = keep.all()
         note = next((note for note in notes if note.id == note_id), None)
         if note:
-            print(f"Found note with ID: {note_id}")
+            logging.info(f"Found note with ID: {note_id}")
         else:
-            print(f"No note found with ID: {note_id}")
+            logging.info(f"No note found with ID: {note_id}")
         return note
     except Exception as e:
-        print(f"Error finding note by ID: {e}")
+        logging.error(f"Error finding note by ID: {e}")
         return None
 
 
@@ -19,23 +22,30 @@ def create_or_update_vocabulary_note(keep, note_id, vocab_list):
     try:
         note = find_note_by_id(keep, note_id)
         if note is None:
-            print(f"No note found with ID: {note_id}. Creating a new note.")
+            logging.info(f"No note found with ID: {note_id}. Creating a new note.")
             note = keep.createNote('Daily Vocabulary', '')
             note_id = note.id
-            print(f"Created new note with ID: {note.id}")
+            logging.info(f"Created new note with ID: {note.id}")
         else:
-            print(f"Found existing note with ID: {note_id}")
+           logging.info(f"Found existing note with ID: {note_id}")
 
-        # Convert vocabulary list to string format
-        vocab_text = "\n".join([f"{word}: {meaning}" for word, meaning in vocab_list])
-        
-        # Update the note's text and save it
-        note.text = vocab_text
+        # Retrieve the existing vocabulary from the note
+        existing_vocab = note.text.strip().split('\n') if note.text else []
+
+        # Merge the existing vocabulary with the new vocabulary
+        combined_vocab = existing_vocab + [f"{word}: {meaning}" for word, meaning in vocab_list]
+
+        # Keep only the last 5 entries
+        final_vocab = combined_vocab[-5:]
+
+        # Update the note's text with the final vocabulary list
+        note.text = "\n".join(final_vocab)
         note.save()
         
         # Synchronize changes
         keep.sync()
         
-        print("Vocabulary note updated successfully.")
+        logging.info("Vocabulary note updated successfully.")
     except Exception as e:
-        print(f"Error creating or updating vocabulary note: {e}")
+        logging.error(f"Error creating or updating vocabulary note: {e}")
+

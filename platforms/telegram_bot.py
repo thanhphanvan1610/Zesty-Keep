@@ -1,8 +1,10 @@
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, CallbackContext
-from telegram.constants import ChatAction
 from utils.reset_new_vocabulary import new_vocabulary
+from utils.logger import setup_logging
+import logging
 
+setup_logging()
 
 class TelegramBot:
     def __init__(self, token: str, note_id: str):
@@ -46,5 +48,5 @@ class TelegramBot:
         self.application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, self.handle_message))
         self.application.add_handler(CommandHandler("stop", self.stop))
 
-        print("Telegram bot running. Press Ctrl+C to stop.")
+        logging.info("Telegram bot started.")
         self.application.run_polling()
