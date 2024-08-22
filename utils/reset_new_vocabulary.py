@@ -1,22 +1,14 @@
-from utils.note_manager import find_note_by_id, create_or_update_vocabulary_note
+from utils.note_manager import create_or_update_vocabulary_note
 from utils.gen_vocabulary import get_vocabulary_list
 from auth import authenticate
-from dotenv import load_dotenv
-from database.database import add_vocabulary_to_db, get_vocabulary_from_db
-import os
+from database.database import add_vocabulary_to_db
 from utils.logger import setup_logging
 import logging
 
 setup_logging()
 
-
-load_dotenv()
-
-EMAIL = os.getenv('EMAIL')
-MASTER_TOKEN = os.getenv('MASTER_TOKEN')
-
 def new_vocabulary(note_id):
-    keep = authenticate(Email=EMAIL, Master_Token=MASTER_TOKEN)
+    keep = authenticate()
     if not keep:
         return
     

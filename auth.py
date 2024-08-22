@@ -1,5 +1,12 @@
 import gkeepapi
-def authenticate(Email, Master_Token):
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+Email= os.getenv('EMAIL')
+Master_Token = os.getenv('MASTER_TOKEN')
+
+def authenticate():
     keep = gkeepapi.Keep()
     try:
         keep.authenticate(Email, Master_Token)
