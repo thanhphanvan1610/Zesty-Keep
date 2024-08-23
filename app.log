@@ -691,3 +691,104 @@ telegram.error.Conflict: Conflict: terminated by other getUpdates request; make 
 2024-08-23 00:02:12,938 - INFO - Initializing database...
 2024-08-23 00:02:12,954 - INFO - Scheduler started. Waiting for the next run...
 2024-08-23 00:02:14,680 - INFO - Scheduler stopped by user.
+2024-08-23 00:20:27,872 - INFO - Initializing database...
+2024-08-23 00:20:31,123 - INFO - Telegram bot started.
+2024-08-23 00:20:31,542 - INFO - Scheduler started. Waiting for the next run...
+2024-08-23 00:22:27,966 - INFO - Initializing database...
+2024-08-23 00:22:27,975 - INFO - Scheduler started. Waiting for the next run...
+2024-08-23 00:22:31,873 - INFO - Telegram bot started.
+2024-08-23 00:22:33,013 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getMe "HTTP/1.1 200 OK"
+2024-08-23 00:22:33,278 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/deleteWebhook "HTTP/1.1 200 OK"
+2024-08-23 00:22:33,285 - INFO - Application started
+2024-08-23 00:22:33,989 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:22:34,441 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/sendMessage "HTTP/1.1 200 OK"
+2024-08-23 00:22:34,900 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/sendMessage "HTTP/1.1 200 OK"
+2024-08-23 00:22:44,237 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:22:54,470 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:23:04,693 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:23:05,011 - INFO - Scheduler stopped by user.
+2024-08-23 00:23:12,959 - INFO - Initializing database...
+2024-08-23 00:23:15,812 - INFO - Telegram bot started.
+2024-08-23 00:30:10,183 - INFO - Initializing database...
+2024-08-23 00:30:13,268 - INFO - Telegram bot started.
+2024-08-23 00:31:18,105 - INFO - Initializing database...
+2024-08-23 00:31:21,007 - INFO - Telegram bot started.
+2024-08-23 00:31:59,302 - INFO - Initializing database...
+2024-08-23 00:32:02,047 - INFO - Telegram bot started.
+2024-08-23 00:34:19,548 - INFO - Initializing database...
+2024-08-23 00:34:22,445 - INFO - Telegram bot started.
+2024-08-23 00:34:24,081 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getMe "HTTP/1.1 200 OK"
+2024-08-23 00:34:24,469 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/deleteWebhook "HTTP/1.1 200 OK"
+2024-08-23 00:34:24,469 - INFO - Application started
+2024-08-23 00:34:33,547 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:34:34,759 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/sendMessage "HTTP/1.1 200 OK"
+2024-08-23 00:34:43,894 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:34:46,016 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:34:47,261 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/sendMessage "HTTP/1.1 200 OK"
+2024-08-23 00:34:49,720 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:34:53,198 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-08-23 00:34:53,223 - INFO - Vocabulary added to database.
+2024-08-23 00:34:53,223 - INFO - Found note with ID: 19178354b1a.d1c0431359128b0d
+2024-08-23 00:34:53,228 - INFO - Found existing note with ID: 19178354b1a.d1c0431359128b0d
+2024-08-23 00:34:53,706 - INFO - Vocabulary note updated successfully.
+2024-08-23 00:34:55,101 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/sendMessage "HTTP/1.1 200 OK"
+2024-08-23 00:35:04,052 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:35:15,407 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:35:15,407 - INFO - Application is stopping. This might take a moment.
+2024-08-23 00:35:15,407 - INFO - Application.stop() complete
+2024-08-23 00:36:44,371 - INFO - Initializing database...
+2024-08-23 00:36:47,132 - INFO - Telegram bot started.
+2024-08-23 00:36:48,639 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getMe "HTTP/1.1 200 OK"
+2024-08-23 00:36:48,968 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/deleteWebhook "HTTP/1.1 200 OK"
+2024-08-23 00:36:48,984 - INFO - Application started
+2024-08-23 00:36:59,982 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:37:04,310 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:37:05,442 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/sendMessage "HTTP/1.1 200 OK"
+2024-08-23 00:37:08,750 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:37:08,750 - INFO - Application is stopping. This might take a moment.
+2024-08-23 00:37:08,750 - INFO - Application.stop() complete
+2024-08-23 00:37:27,865 - INFO - Initializing database...
+2024-08-23 00:37:30,532 - INFO - Telegram bot started.
+2024-08-23 00:37:31,661 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getMe "HTTP/1.1 200 OK"
+2024-08-23 00:37:32,018 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/deleteWebhook "HTTP/1.1 200 OK"
+2024-08-23 00:37:32,018 - INFO - Application started
+2024-08-23 00:37:36,885 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:37:36,885 - INFO - Application is stopping. This might take a moment.
+2024-08-23 00:37:36,885 - INFO - Application.stop() complete
+2024-08-23 00:39:10,330 - INFO - Initializing database...
+2024-08-23 00:39:13,059 - INFO - Telegram bot started.
+2024-08-23 00:39:14,393 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getMe "HTTP/1.1 200 OK"
+2024-08-23 00:39:14,701 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/deleteWebhook "HTTP/1.1 200 OK"
+2024-08-23 00:39:14,716 - INFO - Application started
+2024-08-23 00:39:17,606 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:39:18,121 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/sendMessage "HTTP/1.1 200 OK"
+2024-08-23 00:39:27,947 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:39:31,455 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:39:41,813 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:39:42,217 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:39:44,101 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:39:45,347 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/sendMessage "HTTP/1.1 200 OK"
+2024-08-23 00:39:49,530 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:39:52,658 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-08-23 00:39:52,685 - INFO - Vocabulary added to database.
+2024-08-23 00:39:52,687 - INFO - Found note with ID: 19178354b1a.d1c0431359128b0d
+2024-08-23 00:39:52,688 - INFO - Found existing note with ID: 19178354b1a.d1c0431359128b0d
+2024-08-23 00:39:53,141 - INFO - Vocabulary note updated successfully.
+2024-08-23 00:39:54,517 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/sendMessage "HTTP/1.1 200 OK"
+2024-08-23 00:40:03,493 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:40:13,848 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:40:24,200 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:40:26,112 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:40:27,251 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/sendMessage "HTTP/1.1 200 OK"
+2024-08-23 00:40:30,991 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:40:31,517 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/sendMessage "HTTP/1.1 200 OK"
+2024-08-23 00:40:32,915 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:40:35,699 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-08-23 00:40:35,715 - INFO - Vocabulary added to database.
+2024-08-23 00:40:35,717 - INFO - Found note with ID: 19178354b1a.d1c0431359128b0d
+2024-08-23 00:40:35,718 - INFO - Found existing note with ID: 19178354b1a.d1c0431359128b0d
+2024-08-23 00:40:36,202 - INFO - Vocabulary note updated successfully.
+2024-08-23 00:40:36,764 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/sendMessage "HTTP/1.1 200 OK"
+2024-08-23 00:40:41,975 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 00:40:41,975 - INFO - Application is stopping. This might take a moment.
+2024-08-23 00:40:41,975 - INFO - Application.stop() complete
