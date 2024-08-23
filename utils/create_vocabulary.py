@@ -8,12 +8,9 @@ GROQ_API_KEY = os.getenv('GROQ_API_KEY')
 
 def get_vocabulary_list(topic="General", count=5, level="B1", language="Vietnamese"):
     try:
-        # Initialize the Groq client with the API key
         client = Groq(api_key=GROQ_API_KEY)
-        
-        # Retrieve the list of already learned vocabulary words from the database
-        except_words_tuples = get_existing_vocabulary_list()  # Returns an array of learned word-meaning tuples
-        except_words = [word for word, _ in except_words_tuples]  # Extract words only
+        except_words_tuples = get_existing_vocabulary_list()
+        except_words = [word for word, _ in except_words_tuples]
         
         # Construct the prompt manually
         PROMPT_TEMPLATE = (
@@ -23,7 +20,6 @@ def get_vocabulary_list(topic="General", count=5, level="B1", language="Vietname
             "Format the response strictly as a array of tuples with word and meaning."
         )
         
-        # Format the prompt
         prompt = PROMPT_TEMPLATE.format(
             count=count,
             topic=topic,
@@ -55,10 +51,7 @@ def get_vocabulary_list(topic="General", count=5, level="B1", language="Vietname
 
         # Extract the content from the completion object
         content = completion.choices[0].message.content.strip()
-        print(f"Response content: {content}")
-        
-        # Evaluate the content to convert it into a list of tuples
-        vocab_list = eval(content)  # Assuming the response is in tuple format
+        vocab_list = eval(content)
         
         # Validate that the response is in the expected format
         if not all(isinstance(item, tuple) and len(item) == 2 for item in vocab_list):

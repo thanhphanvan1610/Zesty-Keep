@@ -7,15 +7,13 @@ from telegram.ext import (
     CallbackContext,
     filters,
 )
-from utils.reset_new_vocabulary import new_vocabulary
+from utils.new_vocabulary import new_vocabulary
 from database.database import delete_vocabulary_from_db
 from utils.logger import setup_logging
 import logging
 
-# Setup logging
 setup_logging()
 
-# Define stages for the conversation handler
 TOPIC, LEVEL = range(2)
 
 class TelegramBot:
@@ -35,6 +33,7 @@ class TelegramBot:
             "/destroy - Delete all vocabulary from the note\n"
             "/help - Show this help message\n"
             "/new - Reset and add new vocabulary to the note\n"
+            "/reset - Reset the current conversation\n"
             "/stop - Stop the bot\n\n"
         )
         await update.message.reply_text(help_text)
@@ -70,16 +69,24 @@ class TelegramBot:
     async def stop(self, update: Update, context: CallbackContext):
         if update.message:
             await update.message.reply_text("Goodbye! Have a nice day!")
+        return ConversationHandler.END
+
+    async def reset(self, update: Update, context: CallbackContext):
+        await update.message.reply_text("Conversation reset. Please start over by entering a new command.")
+        return ConversationHandler.END
 
     def run(self):
-        # Define a conversation handler with states TOPIC and LEVEL
+        
         conv_handler = ConversationHandler(
             entry_points=[CommandHandler("new", self.new_vocabulary_start)],
             states={
                 TOPIC: [MessageHandler(filters.TEXT & ~filters.COMMAND, self.set_topic)],
                 LEVEL: [MessageHandler(filters.TEXT & ~filters.COMMAND, self.set_level)],
             },
-            fallbacks=[CommandHandler("stop", self.stop)],
+            fallbacks=[
+                CommandHandler("stop", self.stop),
+                CommandHandler("reset", self.reset)
+            ],
         )
 
         # Add handlers to the application
