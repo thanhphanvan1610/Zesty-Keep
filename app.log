@@ -42,3 +42,13 @@
 2024-08-23 10:14:47,754 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
 2024-08-23 10:14:47,754 - INFO - Application is stopping. This might take a moment.
 2024-08-23 10:14:47,754 - INFO - Application.stop() complete
+2024-08-23 10:49:35,185 - INFO - Initializing database...
+2024-08-23 10:49:38,802 - INFO - Telegram bot started.
+2024-08-23 10:49:39,937 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getMe "HTTP/1.1 200 OK"
+2024-08-23 10:49:40,173 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/deleteWebhook "HTTP/1.1 200 OK"
+2024-08-23 10:49:40,181 - INFO - Application started
+2024-08-23 10:49:41,613 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 10:49:42,067 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/sendMessage "HTTP/1.1 200 OK"
+2024-08-23 10:49:48,961 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 10:49:48,965 - INFO - Application is stopping. This might take a moment.
+2024-08-23 10:49:48,966 - INFO - Application.stop() complete

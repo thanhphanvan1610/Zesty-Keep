@@ -1,5 +1,5 @@
 from utils.note_manager import create_or_update_vocabulary_note
-from utils.create_vocabulary import get_vocabulary_list
+from utils.gen_vocabulary import get_vocabulary_list
 from auth import authenticate
 from database.database import add_vocabulary_to_db
 from utils.logger import setup_logging
