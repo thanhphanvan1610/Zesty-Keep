@@ -5,8 +5,9 @@ description = ""
 authors = ["Phan Văn Thành <thanhphanvan1610@gmail.com>"]
 readme = "README.md"
 
+
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.11"
 google-auth = "^2.34.0"
 google-auth-oauthlib = "^1.2.1"
 google-auth-httplib2 = "^0.2.0"

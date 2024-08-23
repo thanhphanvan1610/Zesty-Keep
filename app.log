@@ -681,3 +681,13 @@ telegram.error.Conflict: Conflict: terminated by other getUpdates request; make 
 2024-08-22 23:43:58,218 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/sendMessage "HTTP/1.1 200 OK"
 2024-08-22 23:44:07,418 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
 2024-08-22 23:44:10,315 - INFO - Scheduler stopped by user.
+2024-08-23 00:01:56,530 - INFO - Initializing database...
+2024-08-23 00:01:56,546 - INFO - Scheduler started. Waiting for the next run...
+2024-08-23 00:01:59,275 - INFO - Telegram bot started.
+2024-08-23 00:02:00,640 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getMe "HTTP/1.1 200 OK"
+2024-08-23 00:02:00,961 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/deleteWebhook "HTTP/1.1 200 OK"
+2024-08-23 00:02:00,961 - INFO - Application started
+2024-08-23 00:02:05,659 - INFO - Scheduler stopped by user.
+2024-08-23 00:02:12,938 - INFO - Initializing database...
+2024-08-23 00:02:12,954 - INFO - Scheduler started. Waiting for the next run...
+2024-08-23 00:02:14,680 - INFO - Scheduler stopped by user.
