@@ -14,8 +14,8 @@ setup_logging()
 
 load_dotenv()
 
-bot_token = os.getenv("TELEBOT_API") or ""
-note_id = "1917557bfc1.83d789cfd8ffbe9f"
+bot_token = os.getenv("TELEBOT_API") or os.environ.get("TELEBOT_API")
+note_id = "19178354b1a.d1c0431359128b0d"
 
 def start_scheduler(note_id):
     """Function to start the scheduler."""

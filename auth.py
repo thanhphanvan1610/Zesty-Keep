@@ -3,8 +3,8 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-Email= os.getenv('EMAIL')
-Master_Token = os.getenv('MASTER_TOKEN')
+Email= os.getenv('EMAIL') or os.environ.get('EMAIL')
+Master_Token = os.getenv('MASTER_TOKEN') or os.environ.get('MASTER_TOKEN')
 
 def authenticate():
     keep = gkeepapi.Keep()

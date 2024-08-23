@@ -5,7 +5,6 @@ setup_logging()
 
 def find_note_by_id(keep, note_id):
     try:
-        # Retrieve all notes
         notes = keep.all()
         note = next((note for note in notes if note.id == note_id), None)
         if note:
