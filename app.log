@@ -792,3 +792,198 @@ telegram.error.Conflict: Conflict: terminated by other getUpdates request; make 
 2024-08-23 00:40:41,975 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
 2024-08-23 00:40:41,975 - INFO - Application is stopping. This might take a moment.
 2024-08-23 00:40:41,975 - INFO - Application.stop() complete
+2024-08-23 06:04:02,095 - INFO - Initializing database...
+2024-08-23 06:04:11,853 - INFO - Telegram bot started.
+2024-08-23 06:04:15,308 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getMe "HTTP/1.1 200 OK"
+2024-08-23 06:04:15,685 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/deleteWebhook "HTTP/1.1 200 OK"
+2024-08-23 06:04:15,685 - INFO - Application started
+2024-08-23 06:04:16,587 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:04:17,204 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/sendMessage "HTTP/1.1 200 OK"
+2024-08-23 06:04:17,772 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/sendMessage "HTTP/1.1 200 OK"
+2024-08-23 06:04:18,426 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/sendMessage "HTTP/1.1 200 OK"
+2024-08-23 06:04:20,589 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:04:20,605 - INFO - Application is stopping. This might take a moment.
+2024-08-23 06:04:20,605 - INFO - Application.stop() complete
+2024-08-23 06:04:44,147 - INFO - Initializing database...
+2024-08-23 06:07:57,422 - INFO - Initializing database...
+2024-08-23 06:08:02,266 - INFO - Telegram bot started.
+2024-08-23 06:08:02,496 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<run_bot() done, defined at D:\google_keep\main.py:23> exception=RuntimeError('Cannot close a running event loop')>
+Traceback (most recent call last):
+  File "D:\google_keep\.venv\Lib\site-packages\telegram\ext\_application.py", line 1079, in __run
+    loop.run_until_complete(self.initialize())
+  File "C:\Users\thanh\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 663, in run_until_complete
+    self._check_running()
+  File "C:\Users\thanh\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 622, in _check_running
+    raise RuntimeError('This event loop is already running')
+RuntimeError: This event loop is already running
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\google_keep\.venv\Lib\site-packages\telegram\ext\_application.py", line 1104, in __run
+    loop.run_until_complete(self.shutdown())
+  File "C:\Users\thanh\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 663, in run_until_complete
+    self._check_running()
+  File "C:\Users\thanh\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 622, in _check_running
+    raise RuntimeError('This event loop is already running')
+RuntimeError: This event loop is already running
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\google_keep\main.py", line 26, in run_bot
+    await tele_bot.run()
+          ^^^^^^^^^^^^^^
+  File "D:\google_keep\platforms\telegram_bot.py", line 87, in run
+    self.application.run_polling()
+  File "D:\google_keep\.venv\Lib\site-packages\telegram\ext\_application.py", line 881, in run_polling
+    return self.__run(
+           ^^^^^^^^^^^
+  File "D:\google_keep\.venv\Lib\site-packages\telegram\ext\_application.py", line 1109, in __run
+    loop.close()
+  File "C:\Users\thanh\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 687, in close
+    raise RuntimeError("Cannot close a running event loop")
+RuntimeError: Cannot close a running event loop
+2024-08-23 06:10:08,662 - INFO - Initializing database...
+2024-08-23 06:10:19,937 - INFO - Telegram bot started.
+2024-08-23 06:10:19,989 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<run_bot() done, defined at D:\google_keep\main.py:23> exception=AttributeError("'Application' object has no attribute 'async_run'")>
+Traceback (most recent call last):
+  File "D:\google_keep\main.py", line 26, in run_bot
+    await tele_bot.run()
+          ^^^^^^^^^^^^^^
+  File "D:\google_keep\platforms\telegram_bot.py", line 87, in run
+    self.applicationrun_async_polling()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Application' object has no attribute 'async_run'
+2024-08-23 06:11:35,409 - INFO - Initializing database...
+2024-08-23 06:11:40,473 - INFO - Telegram bot started.
+2024-08-23 06:11:40,478 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<run_bot() done, defined at D:\google_keep\main.py:23> exception=AttributeError("'Application' object has no attribute 'run_async_polling'")>
+Traceback (most recent call last):
+  File "D:\google_keep\main.py", line 26, in run_bot
+    await tele_bot.run()
+          ^^^^^^^^^^^^^^
+  File "D:\google_keep\platforms\telegram_bot.py", line 87, in run
+    self.application.run_async_polling()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Application' object has no attribute 'run_async_polling'
+2024-08-23 06:15:33,221 - INFO - Initializing database...
+2024-08-23 06:15:38,346 - INFO - Telegram bot started.
+2024-08-23 06:15:41,181 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getMe "HTTP/1.1 200 OK"
+2024-08-23 06:15:41,454 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/deleteWebhook "HTTP/1.1 200 OK"
+2024-08-23 06:15:41,470 - INFO - Application started
+2024-08-23 06:15:44,181 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:15:44,688 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/sendMessage "HTTP/1.1 200 OK"
+2024-08-23 06:15:54,570 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:16:04,907 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:16:15,246 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:16:25,600 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:16:35,947 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:16:46,299 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:16:56,638 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:17:07,621 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:17:17,972 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:17:28,317 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:17:38,656 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:17:49,005 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:17:59,348 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:18:09,682 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:18:20,009 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:18:30,338 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:18:40,659 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:18:50,997 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:19:01,332 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:19:11,658 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:19:21,984 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:19:32,315 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:19:35,184 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 409 Conflict"
+2024-08-23 06:19:35,184 - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-08-23 06:19:35,184 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "D:\google_keep\.venv\Lib\site-packages\telegram\ext\_updater.py", line 755, in _network_loop_retry
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "D:\google_keep\.venv\Lib\site-packages\telegram\ext\_updater.py", line 749, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\google_keep\.venv\Lib\site-packages\telegram\ext\_updater.py", line 389, in polling_action_cb
+    raise exc
+  File "D:\google_keep\.venv\Lib\site-packages\telegram\ext\_updater.py", line 378, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\google_keep\.venv\Lib\site-packages\telegram\ext\_extbot.py", line 649, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\google_keep\.venv\Lib\site-packages\telegram\_bot.py", line 4364, in get_updates
+    await self._post(
+  File "D:\google_keep\.venv\Lib\site-packages\telegram\_bot.py", line 622, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\google_keep\.venv\Lib\site-packages\telegram\ext\_extbot.py", line 355, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\google_keep\.venv\Lib\site-packages\telegram\_bot.py", line 651, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "D:\google_keep\.venv\Lib\site-packages\telegram\request\_baserequest.py", line 200, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\google_keep\.venv\Lib\site-packages\telegram\request\_baserequest.py", line 383, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-08-23 06:19:41,822 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:19:41,822 - INFO - Application is stopping. This might take a moment.
+2024-08-23 06:19:41,840 - INFO - Application.stop() complete
+2024-08-23 06:26:09,990 - INFO - Initializing database...
+2024-08-23 06:26:13,377 - INFO - Telegram bot started.
+2024-08-23 06:26:39,050 - INFO - Initializing database...
+2024-08-23 06:26:42,031 - INFO - Telegram bot started.
+2024-08-23 06:27:50,322 - INFO - Initializing database...
+2024-08-23 06:27:53,098 - INFO - Telegram bot started.
+2024-08-23 06:27:56,205 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getMe "HTTP/1.1 200 OK"
+2024-08-23 06:27:57,893 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/deleteWebhook "HTTP/1.1 200 OK"
+2024-08-23 06:27:57,893 - INFO - Application started
+2024-08-23 06:28:09,202 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:28:19,646 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:28:30,080 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:28:40,517 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:28:50,954 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:29:01,389 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:29:11,827 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:29:22,262 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:29:32,693 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:29:43,129 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:29:53,565 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:30:03,999 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:30:14,437 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:30:24,878 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:30:35,308 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:30:45,751 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:30:56,191 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:31:06,628 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:31:17,057 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:31:27,479 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:31:37,928 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:31:48,371 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:31:58,803 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:32:09,239 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:32:19,678 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:32:30,110 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:32:40,537 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:32:51,413 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:32:56,013 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-23 06:32:56,013 - INFO - Application is stopping. This might take a moment.
+2024-08-23 06:32:56,013 - INFO - Application.stop() complete
+2024-08-23 06:33:13,223 - INFO - Initializing database...
+2024-08-23 06:33:17,754 - INFO - Telegram bot started.
+2024-08-23 06:34:29,291 - INFO - Initializing database...
+2024-08-23 06:34:33,359 - INFO - Telegram bot started.
+2024-08-23 06:35:09,544 - INFO - Initializing database...
+2024-08-23 06:37:31,361 - INFO - Initializing database...
+2024-08-23 06:37:35,173 - INFO - Telegram bot started.
+2024-08-23 06:39:13,903 - INFO - Initializing database...
+2024-08-23 06:39:17,733 - INFO - Telegram bot started.
+2024-08-23 06:39:17,749 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-3' coro=<IocpProactor.accept.<locals>.accept_coro() running at C:\Users\thanh\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py:566> wait_for=<_OverlappedFuture cancelled>>

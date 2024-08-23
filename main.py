@@ -7,7 +7,6 @@ from database.database import initialize_db
 from utils.logger import setup_logging
 
 setup_logging()
-
 load_dotenv()
 
 bot_token = os.getenv("TELEBOT_API") or os.environ.get("TELEBOT_API")
@@ -23,7 +22,6 @@ def run_bot(bot_token, note_id):
     loop.run_until_complete(tele_bot.run())  # Run the bot
 
 def main():
-    # Initialize the database in the main thread
     initialize_db()
     run_bot(bot_token, note_id)
     

@@ -8,6 +8,7 @@ from telegram.ext import (
     filters,
 )
 from utils.reset_new_vocabulary import new_vocabulary
+from database.database import delete_vocabulary_from_db
 from utils.logger import setup_logging
 import logging
 
@@ -31,6 +32,7 @@ class TelegramBot:
         help_text = (
             "Here are the commands you can use:\n\n"
             "/start - Start interacting with the bot\n"
+            "/destroy - Delete all vocabulary from the note\n"
             "/help - Show this help message\n"
             "/new - Reset and add new vocabulary to the note\n"
             "/stop - Stop the bot\n\n"
@@ -60,7 +62,11 @@ class TelegramBot:
     async def handle_message(self, update: Update, context: CallbackContext):
         if update.message:
             await update.message.reply_text("I'm sorry, I don't understand that command. Please use /help to see the available commands.")
-
+    
+    async def delete_vocabulary(self, update: Update, context: CallbackContext):
+        delete_vocabulary_from_db(self.note_id)
+        await update.message.reply_text("Vocabulary deleted successfully.")
+        
     async def stop(self, update: Update, context: CallbackContext):
         if update.message:
             await update.message.reply_text("Goodbye! Have a nice day!")
@@ -79,7 +85,8 @@ class TelegramBot:
         # Add handlers to the application
         self.application.add_handler(CommandHandler("start", self.start))
         self.application.add_handler(CommandHandler("help", self.help))
-        self.application.add_handler(conv_handler)  # Add conversation handler
+        self.application.add_handler(CommandHandler("destroy", self.delete_vocabulary))
+        self.application.add_handler(conv_handler)
         self.application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, self.handle_message))
         self.application.add_handler(CommandHandler("stop", self.stop))
 

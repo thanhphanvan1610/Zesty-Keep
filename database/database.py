@@ -38,6 +38,15 @@ def get_vocabulary_from_db(note_id):
     conn.close()
     return vocab_list
 
+def delete_vocabulary_from_db(note_id):
+    """Delete vocabulary from the database."""
+    conn = sqlite3.connect(DB_FILE)
+    cursor = conn.cursor()
+    cursor.execute("DELETE FROM vocabulary WHERE note_id = ?", (note_id,))
+    conn.commit()
+    conn.close()
+    logging.info("Vocabulary deleted from database.")
+    
 
 def get_vocabulary_list():
     conn = sqlite3.connect(DB_FILE)
