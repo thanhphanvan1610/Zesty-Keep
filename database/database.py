@@ -15,7 +15,7 @@ def initialize_db():
                       id INTEGER PRIMARY KEY AUTOINCREMENT,
                       word TEXT NOT NULL,
                       meaning TEXT NOT NULL,
-                      topic TEXT
+                      topic TEXT NOT NULL,
                       note_id TEXT)''')
     conn.commit()
     conn.close()
@@ -25,7 +25,7 @@ def add_vocabulary_to_db(vocab_list, topic, note_id):
     conn = sqlite3.connect(DB_FILE)
     cursor = conn.cursor()
     for word, meaning in vocab_list:
-        cursor.execute("INSERT INTO vocabulary (word, meaning, topic, note_id) VALUES (?, ?, ?)", (word, meaning, topic, note_id))
+        cursor.execute("INSERT INTO vocabulary (word, meaning, topic, note_id) VALUES (?, ?, ?, ?)", (word, meaning, topic, note_id))
     conn.commit()
     conn.close()
     logging.info("Vocabulary added to database.")

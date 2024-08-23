@@ -11,6 +11,8 @@ from utils.new_vocabulary import new_vocabulary
 from database.database import delete_vocabulary_from_db
 from utils.logger import setup_logging
 import logging
+import sys
+import os
 
 setup_logging()
 
@@ -34,7 +36,8 @@ class TelegramBot:
             "/help - Show this help message\n"
             "/new - Reset and add new vocabulary to the note\n"
             "/reset - Reset the current conversation\n"
-            "/stop - Stop the bot\n\n"
+            "/stop - Stop the bot\n"
+            "/restart - Restart the bot\n"
         )
         await update.message.reply_text(help_text)
 
@@ -71,9 +74,6 @@ class TelegramBot:
             await update.message.reply_text("Goodbye! Have a nice day!")
         return ConversationHandler.END
 
-    async def reset(self, update: Update, context: CallbackContext):
-        await update.message.reply_text("Conversation reset. Please start over by entering a new command.")
-        return ConversationHandler.END
 
     def run(self):
         
@@ -84,8 +84,7 @@ class TelegramBot:
                 LEVEL: [MessageHandler(filters.TEXT & ~filters.COMMAND, self.set_level)],
             },
             fallbacks=[
-                CommandHandler("stop", self.stop),
-                CommandHandler("reset", self.reset)
+                CommandHandler("stop", self.stop)
             ],
         )
 
@@ -96,7 +95,7 @@ class TelegramBot:
         self.application.add_handler(conv_handler)
         self.application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, self.handle_message))
         self.application.add_handler(CommandHandler("stop", self.stop))
+        
 
         logging.info("Telegram bot started.")
         self.application.run_polling()
-
