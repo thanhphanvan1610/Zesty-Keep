@@ -661,3 +661,23 @@ telegram.error.Conflict: Conflict: terminated by other getUpdates request; make 
 2024-08-22 23:40:43,398 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
 2024-08-22 23:40:53,707 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
 2024-08-22 23:40:54,420 - INFO - Scheduler stopped by user.
+2024-08-22 23:43:15,200 - INFO - Initializing database...
+2024-08-22 23:43:15,226 - INFO - Scheduler started. Waiting for the next run...
+2024-08-22 23:43:19,238 - INFO - Telegram bot started.
+2024-08-22 23:43:20,819 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getMe "HTTP/1.1 200 OK"
+2024-08-22 23:43:21,136 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/deleteWebhook "HTTP/1.1 200 OK"
+2024-08-22 23:43:21,136 - INFO - Application started
+2024-08-22 23:43:28,293 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-22 23:43:29,436 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/sendMessage "HTTP/1.1 200 OK"
+2024-08-22 23:43:38,630 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-22 23:43:48,055 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-22 23:43:49,086 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/sendMessage "HTTP/1.1 200 OK"
+2024-08-22 23:43:53,589 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-22 23:43:56,592 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-08-22 23:43:56,627 - INFO - Vocabulary added to database.
+2024-08-22 23:43:56,629 - INFO - Found note with ID: 19178354b1a.d1c0431359128b0d
+2024-08-22 23:43:56,630 - INFO - Found existing note with ID: 19178354b1a.d1c0431359128b0d
+2024-08-22 23:43:57,069 - INFO - Vocabulary note updated successfully.
+2024-08-22 23:43:58,218 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/sendMessage "HTTP/1.1 200 OK"
+2024-08-22 23:44:07,418 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-22 23:44:10,315 - INFO - Scheduler stopped by user.
