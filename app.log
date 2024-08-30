@@ -743,3 +743,26 @@ sqlite3.OperationalError: 3 values for 4 columns
 2024-08-23 11:26:06,565 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
 2024-08-23 11:26:06,565 - INFO - Application is stopping. This might take a moment.
 2024-08-23 11:26:06,565 - INFO - Application.stop() complete
+2024-08-28 05:43:30,277 - INFO - Initializing database...
+2024-08-28 05:43:34,804 - INFO - Telegram bot started.
+2024-08-28 05:43:40,328 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getMe "HTTP/1.1 200 OK"
+2024-08-28 05:43:40,671 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/deleteWebhook "HTTP/1.1 200 OK"
+2024-08-28 05:43:40,671 - INFO - Application started
+2024-08-28 05:43:46,578 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-28 05:43:48,902 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/sendMessage "HTTP/1.1 200 OK"
+2024-08-28 05:43:52,021 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-28 05:43:52,568 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/sendMessage "HTTP/1.1 200 OK"
+2024-08-28 05:44:01,583 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-28 05:44:06,333 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/sendMessage "HTTP/1.1 200 OK"
+2024-08-28 05:44:07,193 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-28 05:44:15,625 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-08-28 05:44:15,703 - INFO - Vocabulary added to database.
+2024-08-28 05:44:15,703 - INFO - Found note with ID: 19178354b1a.d1c0431359128b0d
+2024-08-28 05:44:15,719 - INFO - Found existing note with ID: 19178354b1a.d1c0431359128b0d
+2024-08-28 05:44:16,297 - INFO - Vocabulary note updated successfully.
+2024-08-28 05:44:17,609 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/sendMessage "HTTP/1.1 200 OK"
+2024-08-28 05:44:27,203 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-28 05:44:37,480 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-28 05:44:48,173 - INFO - HTTP Request: POST https://api.telegram.org/bot6352965918:AAG439Fvc5rgADTXzKE39KdOkiXw_LZWpdU/getUpdates "HTTP/1.1 200 OK"
+2024-08-28 05:44:50,501 - INFO - Application is stopping. This might take a moment.
+2024-08-28 05:44:50,501 - INFO - Application.stop() complete
